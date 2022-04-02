@@ -388,6 +388,7 @@ p.main__text{
 /*---------------WRITERS-----------------*/
 .writers{
     margin-top: -80px;
+    margin-bottom: 48px;
 }
 .writers__wrap{
     max-width: 1440px;
@@ -568,5 +569,166 @@ a.team__team_btn:hover{
         transform: translate(0px, 11px);
         text-align: center;
     }
+}
+/*---------------WRITERS-----------------*/
+
+h2.title{
+    font-size: 52px;
+    line-height: 94%;
+    text-align: center;
+    color: #444444;
+}
+
+/*---------------WRITERS-----------------*/
+.blog{
+    margin-bottom: 100px;
+}
+.blog__title{
+    margin-bottom: 73px;
+}
+.blog__title>span{
+    font-size: 52px;
+    line-height: 83%;
+    color: #F55F39;
+    
+    position: relative;
+}
+.blog__title>span::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #F55F39;
+}
+
+
+.blog__items{
+    display: flex;
+    gap: 30px;
+}
+figure.blog__left{
+    flex: 0 1 534px;
+
+    position: relative;
+}
+figure.blog__left > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption.blog__left_capture{
+    padding: 28px 50px 28px 0;
+    background: #FFFFFF;
+
+    max-width: 427px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+h3.capture__title{
+    font-size: 30px;
+    line-height: 127%;
+    color: #252061;
+
+    margin-bottom: 13px;
+}
+p.capture__text{
+    font-size: 14px;
+    line-height: 164%;
+    color: #969696;
+
+    margin-bottom: 15px;
+}
+.capture__autor{
+    display: flex;
+    gap: 10px;
+}
+.capture__autor-name{
+    font-size: 15px;
+    line-height: 153%;
+    color: #252061;
+
+    margin-bottom: 1px;
+}
+.capture__autor-date{
+    font-size: 13px;
+    line-height: 177%;
+    color: #252061;
+}
+
+
+.blog__items_right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    flex: 0 1 376px;
+}
+.right__block_img > img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+figure.right__block_figure{
+    position: relative;
+}
+figure.right__block_figure > img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+figcaption.right__block{
+    padding: 20px 79px 1px 0px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: #FFF;
+    max-width: 300px;
+}
+p.right__block-date{
+    font-size: 12px;
+    line-height: 150%;
+    color: #929292;
+
+    margin-bottom: 4px;
+}
+p.right__block-text{
+    font-size: 18px;
+    line-height: 128%;
+    color: #252061;
+}
+.right__block_visit{
+    background: url("img/blog/bg.png") no-repeat center, #252061;
+    background-size: cover;
+
+    padding: 45px 108px 40px 60px;
+}
+h4.block__visit-title{
+    font-size: 28px;
+    line-height: 107%;
+    color: #FFFFFF;
+
+    margin-bottom: 26px;
+}
+p.block__visit-text{
+    font-size: 14px;
+    line-height: 164%;
+    color: #FFFFFF;
+
+    margin-bottom: 19px;
+}
+a.block__visit-link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 164%;
+    text-transform: capitalize;
+    color: #F55F39;
 }
 /*---------------WRITERS-----------------*/
