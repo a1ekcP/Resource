@@ -777,3 +777,59 @@ a.block__visit-link{
     }
 }
 /*---------------WRITERS-----------------*/
+
+
+/*---------------INVITE-----------------*/
+.invite__wrap{
+    max-width: 1130px;
+    padding: 0 15px;
+    filter: drop-shadow(14px 14px 80px rgba(0, 0, 0, 0.4));
+    margin: 0 auto;
+
+    position: relative;
+}
+.invite__capture{
+    padding: 49px 50px 59px 50px;
+    background: #352F77;
+    max-width: 530px;
+
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+.invite__title{
+    font-size: 44px;
+    line-height: 136%;
+    color: #FFFFFF;
+
+    margin-bottom: 22px;
+}
+.invite__text{
+    font-size: 15px;
+    line-height: 153%;
+    color: #FFFFFF;
+
+    margin-bottom: 55px;
+}
+.invite__btn{
+    display: inline-block;
+    padding: 9px 30px 4px 80px;
+    background: url("icon/invite/arrow.png") no-repeat left 8% center,#2BCA8B;
+    max-width: 355px;
+}
+.invite__btn_title{
+    font-size: 23px;
+    line-height: 100%;
+    color: #FFFFFF;
+    display: inline-block;
+
+    margin-bottom: 9px;
+}
+.invite__btn_subtitle{
+    font-size: 14px;
+    line-height: 164%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    display: inline-block;
+}
+/*---------------INVITE-----------------*/
