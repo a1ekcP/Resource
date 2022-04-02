@@ -260,21 +260,9 @@ form.header__search{
         height: auto;
     }
 }
+
+
 /*---------------HEADER-----------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -346,4 +334,131 @@ p.main__text{
     color: #4D4D4D;
     transition: 0.7s;
 }
+
+
+
+/*-----------------------------*/
+@media (max-width: 1024px){
+    .main{
+        background-position: right;
+    }
+}
+@media (max-width: 900px){
+    p.main__text {
+        color: #fc3e3e;
+    }
+}
+/*-----------------------------*/
 /*---------------MAIN-----------------*/
+
+
+/*---------------WRITERS-----------------*/
+.writers{
+    margin-top: -80px;
+}
+.writers__wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.writers__help{
+    padding: 130px 20px 58px 210px;
+    display: flex;
+    gap: 60px;
+}
+
+h2.help__title{
+    font-size: 28px;
+    line-height: 139%;
+    color: #2BCA8B;
+
+    max-width: 125px;
+}
+
+a.help__link{
+    display: block;
+    margin-bottom: 8px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 164%;
+    color: #252061;
+}
+a.help__link:last-child{
+    margin-bottom: 0;
+}
+a.help__link:hover{
+    text-decoration: underline;
+    color: #2e21bd;
+}
+
+
+.writers__team{
+    padding: 37px 55px;
+
+    background: url("img/writers/bg.png") no-repeat center, #252061;
+    background-size: cover;
+    box-shadow: 7px 7px 50px rgba(0, 0, 0, 0.4);
+    
+    flex: 0 1 43%;
+}
+h4.team__title{
+    font-size: 24px;
+    line-height: 96%;
+    color: #FFFFFF;
+
+    margin-bottom: 26px;
+}
+p.team__text{
+    font-size: 14px;
+    line-height: 164%;
+    color: #FFFFFF;
+
+    margin-bottom: 19px;
+    max-width: 306px;
+}
+
+
+.team__members{
+    position: relative;
+}
+img.team__members_img{
+    filter: drop-shadow(7px 7px 40px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+}
+img.team__members_img:first-child{
+    margin-right: 40px;
+}
+img.team__members_img:nth-child(2){
+    position: absolute;
+    top: 12px;
+    left: 55px;
+    z-index: 2;
+}
+a.team__team_btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 153%;
+    color: #FFFFFF;
+
+    background: #2BCA8B;
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.4);
+    padding: 12px 15px;
+
+    transform: translate(-16px, 11px);
+    display: inline-block;
+    transition: 0.6s;
+}
+a.team__team_btn:hover{
+    color: #2BCA8B;
+    background: #FFFFFF;
+    transition: 0.6s;
+}
+
+/*---------------WRITERS-----------------*/
