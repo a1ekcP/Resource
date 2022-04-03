@@ -788,10 +788,16 @@ a.block__visit-link{
 
     position: relative;
 }
+.invite__wrap > img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .invite__capture{
     padding: 49px 50px 59px 50px;
     background: #352F77;
-    max-width: 530px;
+    max-width: 50%;
+    height: auto;
 
     position: absolute;
     bottom: 0;
@@ -814,9 +820,14 @@ a.block__visit-link{
 .invite__btn{
     display: inline-block;
     padding: 9px 30px 4px 80px;
-    background: url("icon/invite/arrow.png") no-repeat left 8% center,#2BCA8B;
+    background: url("icon/invite/arrow.png") no-repeat left 7% center,#2BCA8B;
     max-width: 355px;
 }
+.invite__btn:hover{
+    opacity: 0.9;
+    background-position: left 9% center;
+}
+
 .invite__btn_title{
     font-size: 23px;
     line-height: 100%;
@@ -831,5 +842,46 @@ a.block__visit-link{
     text-transform: capitalize;
     color: #FFFFFF;
     display: inline-block;
+}
+
+
+/*----------------*/
+@media (max-width: 1200px){
+    .invite__capture{
+        opacity: 0.9;
+    }
+}
+@media (max-width: 967.95px){
+    .invite__capture{
+        opacity: 1;
+        position: unset;
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .invite__title{
+        font-size: 28px;
+    }
+    .invite__capture{
+        padding: 49px 15px 59px 15px;
+
+    }
+}
+@media (max-width: 450px){
+    .invite__btn{
+        padding: 9px 4px 4px 80px;
+    }
+}
+@media (max-width: 400px){
+    .invite__btn{
+        padding: 9px 4px 4px 53px;
+        background-position: left 4% center;
+    }
+    .invite__btn_title{
+        font-size: 20px;
+    }
+    .invite__btn_subtitle{
+        font-size: 10px;
+    }
 }
 /*---------------INVITE-----------------*/
