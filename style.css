@@ -1276,16 +1276,16 @@ h2.accesses__title{
 
 
 form.resources__search{
-    display: inline-block;
-    border: 1px solid #D9D9D9;
-    border-radius: 3px;
-
-    transform: translateX(50%);
     margin-bottom: 63px;
+    text-align: center;
 }
 
 .resources__search input{
+    border: 1px solid #D9D9D9;
     padding: 14px 68px;
+    height: 50px;
+    max-width: 312px;
+    border-radius: 3px 0 0 3px;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -1305,6 +1305,7 @@ form.resources__search{
     line-height: 150%;
     color: rgba(224, 224, 224, 1);
 }
+
 .resources__btn{
     font-family: 'Poppins';
     font-style: normal;
@@ -1315,18 +1316,25 @@ form.resources__search{
     background: #2BCA8B;;
     padding: 15px 57px;
     border-radius: 0px 3px 3px 0px;
+    margin-left: -5px;
 }
 
 .resources__cards{
     display: flex;
     gap: 20px;
 }
+
 .resources__card{
     flex: 0 1 33.333%;
     max-width: 300px;
 
     border: 3px solid #E6E8EE;
-    padding: 29px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+.resources__card_item{
+    padding: 29px 30px 53px 30px;
+    flex: 1 1 auto;
 }
 .card__title{
     font-size: 17px;
@@ -1336,7 +1344,6 @@ form.resources__search{
     margin-bottom: 16px;
 }
 .card__lists{
-    margin-bottom: 53px;
 }
 .card__list{
     margin-bottom: 8px;
@@ -1360,7 +1367,6 @@ form.resources__search{
 .card__view-all{
     padding: 16px 30px;
     background: #EEF1F6;
-    margin: 0 -30px;
 }
 .card__view-link{
     font-family: 'Poppins';
@@ -1369,5 +1375,35 @@ form.resources__search{
     font-size: 11px;
     line-height: 209%;
     color: #252061;
+}
+
+
+/*----------------*/
+@media (max-width: 868px){
+    .resources__card_item {
+        padding: 20px 20px 43px 20px;
+    }
+}
+@media (max-width: 768px){
+    .resources__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px){
+    .resources__title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 500px){
+    .resources__title {
+        font-size: 42px;
+    }
+    .resources__search input{
+        max-width: 100%;
+    }
+    .resources__btn{
+        display: none;
+    }
 }
 /*---------------RESOURSES-----------------*/
