@@ -190,6 +190,21 @@ form.header__search{
     }*/
     /*-------------------------*/
 
+
+
+    input.header__menu-search{
+        display: none;
+    }
+    label.header__menu-search{
+        background: url("icon/header/search.png") no-repeat center;
+        background-size: cover;
+        width: 25px;
+        height: 21px;
+        display: inline-block;
+        position: relative;
+        z-index: 101;
+    }
+
 @media (max-width: 1150px){
     ul.header__menu{
         position: absolute;
@@ -243,15 +258,33 @@ form.header__search{
         left: 50%;
         transform: translateX(-50%);
     }
-    .header__search{
+
+
+    /*input[type="search"],*/
+    .header__btn{
         display: none;
     }
-    .search__icon{
+    .header__search > input[type="search"]{
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+        z-index: 100;
+        display: none;
+    }
+
+    form.header__search{
         display: block;
-        background: url("icon/header/search.png") no-repeat center;
-        background-size: cover;
+        border: none;
         width: 25px;
         height: 21px;
+    }
+
+    input.header__menu-search:checked ~ input[type="search"]{
+        display: block;
     }
 }
 @media (max-width: 768px){
@@ -263,6 +296,8 @@ form.header__search{
 
 
 /*---------------HEADER-----------------*/
+
+
 
 
 
@@ -1343,8 +1378,6 @@ form.resources__search{
 
     margin-bottom: 16px;
 }
-.card__lists{
-}
 .card__list{
     margin-bottom: 8px;
     padding-left: 28px;
@@ -1449,6 +1482,7 @@ form.resources__search{
 
     margin-bottom: 10px;
 }
+
 .footer__lists{
     display: flex;
     flex-direction: column;
@@ -1487,4 +1521,98 @@ form.resources__search{
 .footer__license a:hover{
     opacity: 0.8;
 }
+
+
+.footer__menu-about,
+.footer__menu-info,
+.footer__menu-contact{
+    position: relative;
+    height: 100%;
+    padding-top: 0;
+}
+
+.footer__menu_check,
+.footer__menu_label{
+    display: none;
+}
+.footer__menu_label{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100%;
+    border-top: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+    padding: 10px 0;
+
+    background: url("icon/footer/arrow-down.png") no-repeat 90% center;
+}
+
+/*----------------*/
+@media (max-width: 918.95px){
+    .footer__body{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__about {
+        flex: 0 1 100%;
+    }
+}
+@media (max-width: 500px){
+    .footer{
+        background-size: auto;
+    }
+    .footer__nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer__menu_title{
+        display: none;
+    }
+    .footer__menu_label{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .footer__lists{
+        flex-direction: row;
+        transform: scale(0);
+        transition: 0.6s;
+    }
+    .footer__list_link{
+        text-transform: uppercase;
+    }
+    .footer__menu-about > input.footer__menu_check:checked ~ .footer__lists-about{
+        padding-top: 50px;
+        transform: scale(1);
+        transition: 0.6s;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__menu-info > input.footer__menu_check:checked ~ .footer__lists-info{
+        padding-top: 50px;
+        transform: scale(1);
+        transition: 0.6s;
+        flex-direction: column;
+        text-align: center;
+    }
+    input.footer__menu_check:checked ~ .footer__lists-contact{
+        padding-top: 50px;
+        transform: scale(1);
+        transition: 0.6s;
+        flex-direction: column;
+        text-align: center;
+    }
+    input.footer__menu_check:checked ~ .footer__menu_label{
+        background: url("icon/footer/arrow-up.png") no-repeat 90% center;
+    }
+}
+/*------------------*/
+
+
+
 /*---------------FOOTER-----------------*/
